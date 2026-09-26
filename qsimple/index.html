@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quilsbee</title><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><img src="assets/logo.svg" alt="Quilsbee"><span>Quilsbee</span></a>
+  <button id="themeToggle" class="theme" aria-label="Toggle theme">☾</button>
+</header>
+<main>
+  <section class="hero">
+    <img class="hero-logo" src="assets/logo.svg" alt="Quilsbee logo">
+    <h1>Quilsbee</h1>
+    <p>Quantum learning through story, code and interactive exploration.</p>
+  </section>
+
+  <section class="options" aria-label="Project links">
+    <a class="card blue" href="https://github.com/Srinesh-art/Quilsbee.git" target="_blank" rel="noopener">
+      <div class="icon">⌘</div><div><h2>Code Repo</h2><p>View the source code</p></div><span>↗</span>
+    </a>
+    <a class="card purple" href="https://quilsbee.vercel.app/" target="_blank" rel="noopener">
+      <div class="icon">◎</div><div><h2>Web Link</h2><p>Open Quilsbee live</p></div><span>↗</span>
+    </a>
+    <a class="card red" href="https://drive.google.com/drive/folders/1bRu1vquhnzThxYZsgzIP01zrgV2LWgzP?usp=sharing" target="_blank" rel="noopener">
+      <div class="icon">▶</div><div><h2>Demo Video</h2><p>Watch the project demo</p></div><span>↗</span>
+    </a>
+    <button class="card green" id="comicOpen">
+      <div class="icon">▤</div><div><h2>Sample Comics</h2><p>Read Chapter 01</p></div><span>→</span>
+    </button>
+  </section>
+</main>
+
+<div class="modal" id="comicModal" aria-hidden="true">
+  <div class="reader">
+    <div class="reader-head"><strong>Quilsbee • Sample Comic</strong><button id="closeComic">×</button></div>
+    <div class="page"><img id="comicPage" src="assets/comic/page-01.webp" alt="Sample comic page 1"></div>
+    <div class="controls"><button id="prev">←</button><span id="pageNo">01 / 11</span><button id="next">→</button></div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body></html>
