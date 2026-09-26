@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quilsbee — AI-powered interactive quantum learning</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="brand">Quilsbee</h1>
+    <p class="subtitle">AI-powered interactive quantum learning</p>
+  </header>
+
+  <main class="container">
+
+    <section class="options-grid" aria-label="Project links">
+      <a class="card" href="https://github.com/DHIVESH-M/quantum-static" target="_blank" rel="noopener noreferrer">
+        <span class="card-icon" aria-hidden="true">💻</span>
+        <h2>Code Repo</h2>
+        <p>View the Quilsbee project source code</p>
+      </a>
+
+      <a class="card" href="https://quilsbee.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <span class="card-icon" aria-hidden="true">🔗</span>
+        <h2>Web Link</h2>
+        <p>Open the Quilsbee platform</p>
+      </a>
+
+      <a class="card" href="https://drive.google.com/drive/folders/1bRu1vquhnzThxYZsgzIP01zrgV2LWgzP?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <span class="card-icon" aria-hidden="true">🎬</span>
+        <h2>Demo Video</h2>
+        <p>Watch the project demonstration</p>
+      </a>
+    </section>
+
+    <section class="comic-section" aria-label="Sample Comics">
+      <h2 class="section-title">Sample Comics</h2>
+      <p class="section-subtitle">A short manga introduction to qubits, from the Quilsbee learning series.</p>
+
+      <div class="comic-viewer">
+        <button id="prevBtn" class="nav-btn" aria-label="Previous page">&#8592;</button>
+
+        <div class="comic-frame">
+          <img id="comicImage" src="assets/comic/page-01.png" alt="Quilsbee comic page 1" tabindex="0">
+        </div>
+
+        <button id="nextBtn" class="nav-btn" aria-label="Next page">&#8594;</button>
+      </div>
+
+      <div class="comic-controls">
+        <span id="pageIndicator" class="page-indicator">Page 1 / 11</span>
+        <button id="fullscreenBtn" class="fs-btn">Fullscreen Reader</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Quilsbee &mdash; Smart India Hackathon Project</p>
+  </footer>
+
+  <!-- Lightbox / Fullscreen reader -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Comic fullscreen reader">
+    <button id="lightboxClose" class="lightbox-close" aria-label="Close fullscreen reader">&times;</button>
+    <button id="lightboxPrev" class="lightbox-nav lightbox-prev" aria-label="Previous page">&#8592;</button>
+    <img id="lightboxImage" class="lightbox-image" src="" alt="">
+    <button id="lightboxNext" class="lightbox-nav lightbox-next" aria-label="Next page">&#8594;</button>
+    <span id="lightboxIndicator" class="lightbox-indicator">Page 1 / 11</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
