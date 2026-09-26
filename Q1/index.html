@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quilsbee — Quantum learning resources and interactive sample comic.">
+  <title>Quilsbee</title>
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <img src="assets/logo.svg" alt="Quilsbee logo">
+      <span>quilsbee</span>
+    </a>
+    <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle theme">☾</button>
+  </header>
+
+  <main class="hero">
+    <section class="intro">
+      <div class="eyebrow">QUANTUM LEARNING</div>
+      <h1>Explore <span>Quilsbee</span></h1>
+      <p>A simple gateway to our quantum learning platform, source code, demo and sample comic.</p>
+    </section>
+
+    <section class="options" aria-label="Quilsbee links">
+      <a class="option-card" href="https://github.com/DHIVESH-M/quantum-static" target="_blank" rel="noopener">
+        <div class="icon">⌘</div>
+        <div><h2>Code Repo</h2><p>View the source code</p></div><b>↗</b>
+      </a>
+      <a class="option-card" href="https://quilsbee.vercel.app/" target="_blank" rel="noopener">
+        <div class="icon">◉</div>
+        <div><h2>Web Link</h2><p>Open Quilsbee</p></div><b>↗</b>
+      </a>
+      <a class="option-card" href="https://drive.google.com/drive/folders/1bRu1vquhnzThxYZsgzIP01zrgV2LWgzP?usp=sharing" target="_blank" rel="noopener">
+        <div class="icon">▶</div>
+        <div><h2>Demo Video</h2><p>Watch the project demo</p></div><b>↗</b>
+      </a>
+      <button class="option-card comic-card" id="comicOpen" type="button">
+        <div class="icon">▤</div>
+        <div><h2>Sample Comics</h2><p>Read Chapter 01</p></div><b>→</b>
+      </button>
+    </section>
+  </main>
+
+  <div class="modal" id="comicModal" aria-hidden="true">
+    <div class="reader">
+      <div class="reader-head">
+        <div>
+          <strong>QUILSBEE · SAMPLE COMIC</strong>
+          <span id="pageLabel">Page 1 / 11</span>
+        </div>
+        <button id="closeComic" class="close" type="button">×</button>
+      </div>
+      <div class="reader-body">
+        <button id="prev" class="nav" type="button">‹</button>
+        <img id="comicImage" src="assets/comic/page-01.png" alt="Quantum Academy sample comic page">
+        <button id="next" class="nav" type="button">›</button>
+      </div>
+      <div class="reader-foot">
+        <button id="first" type="button">First</button>
+        <button id="auto" type="button">▶ Auto</button>
+        <button id="last" type="button">Last</button>
+        <span class="hint">Use ← → keys</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
